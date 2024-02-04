@@ -1,0 +1,261 @@
+body{
+  background-image: url(bg-table.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0px;
+}
+.header-fix{
+  height: 85px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #eee;
+  border-bottom: 1 px solid #ddd;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+.header-container{
+  width: 1024px;
+  margin: auto;
+}
+.container{
+  width: 1024px;
+  margin: 84px auto 10px;
+  border-radius: 5px;
+  border: 1px solid #bbbbbb;
+  background-color: #eeeeee;
+  padding: 10px;
+
+}
+section{
+align-content: center;
+}
+aside{
+  float: right;
+  width: 25%;
+  margin-left: 1%;
+  margin-right: 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #bbbbbb;
+  background-color: white;
+}
+aside h3{
+  margin-bottom: 0px;
+}
+
+aside ul{
+  margin-top: 10px;
+}
+article{
+  text-align: justify;
+}
+.framework{
+  font-weight: bold;
+}
+
+tfoot{
+  padding-bottom: 5px;
+}
+.withStyle{
+  width: 71%;
+  border: 2px solid #597aed;
+  background-color: #3d4bff;
+  font-family: 'Shadows Into Light', cursive;
+  border-spacing: 0;
+}
+.withStyle caption{
+  font-size: 1.5em;
+  padding: 20px;
+  font-style: italic;
+  caption-side: bottom;
+  color: #0041c3;
+  text-align: right;
+  letter-spacing: 1px;
+}
+.withStyle thead tr{
+  color: white;
+  font-size: 1.5em;
+  background-image: url(bg-table.jpg);
+  text-align: left;
+}
+.withStyle tfoot tr{
+  color: white;
+  font-size: 1.5em;
+  background-image: url(bg-table.jpg);
+  text-align: left;
+  
+}
+.withStyle thead th:nth-child(1){
+  width: 35%;
+}
+.withStyle  thead th:nth-child(2){
+  width: 20%;
+}
+.withStyle thead th:nth-child(3){
+  width: 20%;
+}
+.withStyle thead th:nth-child(4){
+  width: 25%;
+}
+.withStyle tbody tr:nth-child(odd){
+  background-color: #9ca2ce;
+}
+.withStyle tbody tr:nth-child(even){
+  background-color: #7d87e6;
+}
+.withStyle tbody tr:nth-child(even){
+  background-color: #7d87e6;
+}
+.withStyle tbody th{
+  color: #f2f1ec;
+  font-size: 1.2em;
+}
+.withStyle tbody{
+  text-align: left;
+  
+}
+table.withStyle td,
+table.withStyle th {
+padding: 15px;
+}
+#datatable-container{
+  width: 71%;
+  
+}
+#datatable-container header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+#datatable-container input{
+  display: flex inline;
+}
+#datatable-container p{
+  margin-top: -1px;
+}
+#datatable-container table{
+  width: 100%;
+  background-color: #ccc;
+  border: 1px solid #bbb;
+  border-collapse: collapse;
+}
+#datatable-container table thead th{
+  font-size: 1.15em;
+  font-weight: bold;
+  margin: 5px;
+  color: #2b2b2b;
+  text-align: center;
+  background-color: #ccc;
+  border-top: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+}
+#datatable-container table thead .th:nth-child(1){
+  background-image: url(sort_asc.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  cursor: pointer;
+}
+#datatable-container table thead .th{
+  background-image: url(sort_both.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  cursor: pointer;
+}
+#datatable-container caption{
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-style: italic;
+  caption-side: top;
+  color: #0041c3;
+  background-color: #ccc;
+  text-align: center;
+  letter-spacing: 1px;
+  background-color: #ccc;
+  border-top: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+}
+#datatable-container table tbody tr{
+  text-align: center;
+}
+#datatable-container table tbody td{
+  font-size: 1em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#datatable-container table tbody tr:nth-child(odd){
+  background-color: #ddd;
+}
+#datatable-container table tbody tr:nth-child(even){
+  background-color: #eee;
+}
+#datatable-container table tfoot td{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#datatable-container table tfoot th{
+  text-align: right;
+  border-right: 1px solid #bbb;
+  padding-right: 10px;
+}
+#datatable-container table tfoot td{
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#datatable-container footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+#datatable-container footer p{
+  margin-top: 20px;
+}
+
+
+.pagination a {
+  display: flex inline;
+  padding-left: 0;
+  
+  padding: 5px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  margin-top: 15px;
+  background-color: white;
+}
+
+.pagination a.active {
+  background-color: #0041c3;
+  color: white;
+  border: 1px solid #0041c3;
+  margin-left: 0;
+}
+.pagination a.inactive {
+  background-color: #f3eeee;
+  color: #bbb;
+  border: 1px solid #dbdada;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.pagination a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+

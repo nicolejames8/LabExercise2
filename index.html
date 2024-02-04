@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory Exercise 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/b3c27dd02c.js" crossorigin="anonymous"></script>
+</head>
+
+<body> 
+    <header class="header-fix">
+         <div class="header-container">     
+         <h1><i class="fa-solid fa-table"></i> Formatting a Table</h1>
+         </div>  
+     </header>
+
+     <div class="container">
+        <section>
+            <aside>
+                <h2><i class="fa-solid fa-question"></i> HTML Structure</h2>
+                <h3>Tags</h3>
+                <ul>
+                    <li><b>table</b>: table</li>
+                    <li><b>table</b>: table title</li>
+                    <li><b>thead</b>: table header</li>
+                    <li><b>tbody</b>: table content</li>
+                    <li><b>tr</b>: Row of a table</li>
+                    <li><b>th</b>: Title cell of a table</li>
+                    <li><b>td</b>: Cell of a table</li>
+                </ul>
+                <h3>Attributes</h3>
+                <ul>
+                    <li><b>colspan</b> defines the number of columns to be merged</li>
+                    <li><b>rowspan</b> defines the number of rows to be merged</li>
+                    <li><b>scope</b> defines the td cells to which the th cell is linked (row/col)</li>
+                </ul>
+            </aside>
+           
+            <article>
+                <h2>Unstyled HTML Table</h2>
+                <p>Let's start by creating a table that will list a data set, for example. <br> No CSS style is applied: </p>
+                <table >
+                    <br>
+                    <caption>Presentation of the various PHP Frameworks</caption>
+                    <br>
+
+                    <thead>                     
+                        <tr> 
+                            <th>Framework</th>
+                            <th>Year of creation</th>
+                            <th>Creator</th>
+                            <th>Github Stars</th>
+                        </tr>
+                   </thead>
+
+                    <tbody> 
+                    
+                    <tr> 
+                        <td class="framework">Symfony</td>
+                        <td>2005</td>
+                        <td>SensioLabs</td>
+                        <td>23.1k</td>
+                    </tr>
+                    <tr> 
+                        <td class="framework">Lavarel</td>
+                        <td>2011</td>
+                        <td>Taylor Otwell</td>
+                        <td>58.8k</td>
+                    </tr>
+                    <tr> 
+                        <td class="framework">Codelgniter</td>
+                        <td>2006</td>
+                        <td>Rick Ellis</td>
+                        <td>18k</td>
+                    </tr>
+                    <tr> 
+                        <td class="framework">Zend Framework</td>
+                        <td>2006</td>
+                        <td>Zend Technologies</td>
+                        <td>5.7k</td>
+                    </tr>
+                    <tr> 
+                        <td class="framework">Yii</td>
+                        <td>2008</td>
+                        <td>Qiang Xu</td>
+                        <td>4.8k</td>
+                    </tr>
+                    <tr> 
+                        <td class="framework">CakePHP</td>
+                        <td>2005</td>
+                        <td>Cake Software Foundation</td>
+                        <td>8.1k</td>
+                    </tr>
+                    <tr> 
+                        <td class="framework">FuelPHP</td>
+                        <td>2011</td>
+                        <td>Fuel PHP dew team</td>
+                        <td>>1k</td>
+                    </tr>
+                    <tr> 
+                        <td class="framework">Phalcon</td>
+                        <td>2012</td>
+                        <td>Andres Gutierrez</td>
+                        <td>10.1k</td>
+                    </tr>
+                    <tr> 
+                        <td class="framework">Slim PHP</td>
+                        <td>-</td>
+                        <td>Slim Framework Team</td>
+                        <td>10.6k</td>
+                    </tr>
+                    <tr> 
+                        <td class="framework">PEAR</td>
+                        <td>1999</td>
+                        <td>Stig S. Bakken</td>
+                        <td>-</td>
+                    </tr>
+                    </tr>
+                    <tfoot>
+                        <td colspan="3" class="framework">Total Stars</td>
+                        <td>>100k</td>
+                    </tfoot>
+                    
+                    </tbody>
+                </table>
+            
+            </article>
+        </section>
+        <br>
+        <br>
+        <section>
+            <aside>
+                <h2><i class="fa-solid fa-question"></i>CSS Styles</h2>
+                <ul>
+                    <li><b>table-layout</b></li>
+                    <li><b>border-collapse</b></li>
+                    <li><b>caption-side</b></li>
+                    <li><b>border</b></li>
+                    <li><b>background-color</b></li>
+                    <li><b>background-image</b></li>
+                    <li><b>width</b></li>
+                    <li><b>color</b></li>
+                    <li><b>text-align</b></li>
+                    <li><b>font-size</b></li>
+                    <li><b>...</b></li>
+                </ul>
+            </aside>
+           
+            <article>
+                <h2>Stylized HTML Table</h2>
+                <p>The same HTML table with a CSS style this time to define column widths, background colors, font, etc.:</p>
+                <table class="withStyle">
+                    <br>
+                    <caption>Presentation of the various PHP Frameworks</caption>
+                    <br>
+                    <thead> 
+                        <tr> 
+                            <th>Framework</th>
+                            <th>Year of creation</th>
+                            <th>Creator</th>
+                            <th>Github Stars</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        
+                        <tr> 
+                                <td class="framework">Symfony</td>
+                                <td>2005</td>
+                                <td>SensioLabs</td>
+                                <td>23.1k</td>
+                            
+                        </tr>
+                        <tr> 
+                            <td class="framework">Lavarel</td>
+                            <td>2011</td>
+                            <td>Taylor Otwell</td>
+                            <td>58.8k</td>
+                        </tr>
+                        <tr> 
+                            <td class="framework">Codelgniter</td>
+                            <td>2006</td>
+                            <td>Rick Ellis</td>
+                            <td>18k</td>
+                        </tr>
+                        <tr> 
+                            <td class="framework">Zend Framework</td>
+                            <td>2006</td>
+                            <td>Zend Technologies</td>
+                            <td>5.7k</td>
+                        </tr>
+                        <tr> 
+                            <td class="framework">Yii</td>
+                            <td>2008</td>
+                            <td>Qiang Xu</td>
+                            <td>4.8k</td>
+                        </tr>
+                        <tr> 
+                            <td class="framework">CakePHP</td>
+                            <td>2005</td>
+                            <td>Cake Software Foundation</td>
+                            <td>8.1k</td>
+                        </tr>
+                        <tr> 
+                            <td class="framework">FuelPHP</td>
+                            <td>2011</td>
+                            <td>Fuel PHP dew team</td>
+                            <td>>1k</td>
+                        </tr>
+                        <tr> 
+                            <td class="framework">Phalcon</td>
+                            <td>2012</td>
+                            <td>Andres Gutierrez</td>
+                            <td>10.1k</td>
+                        </tr>
+                        <tr> 
+                            <td class="framework">Slim PHP</td>
+                            <td>-</td>
+                            <td>Slim Framework Team</td>
+                            <td>10.6k</td>
+                        </tr>
+                        <tr> 
+                            <td class="framework">PEAR</td>
+                            <td>1999</td>
+                            <td>Stig S. Bakken</td>
+                            <td>-</td>
+                        </tr>
+                        
+                    </tbody>
+                    
+                    <tfoot>
+                        <tr>
+                           <td colspan="3" class="framework">Total Stars</td>
+                            <td>>100k</td> 
+                        </tr>
+                        
+                    </tfoot>
+                    
+            
+                </table>
+            
+            </article>
+        </section>
+
+        <section>
+            <aside>
+                <h2><i class="fa-solid fa-question"></i>Features</h2>
+                <ul>
+                    <li><b>search engine</b></li>
+                    <li><b>pagination</b></li>
+                    <li><b>sort by column</b></li>
+                    <li><b>filter by column</b></li>
+                    <li><b>order by column</b></li>
+                    <li><b>...</b></li>
+                </ul>
+            </aside>
+           
+            <article>
+                <h2>HTML Table / Advanced CSS</h2>
+                <p>Here is an HTML / CSS table widely used in Web applications to present a collection of data: <b>Datatable</b><br>
+                The possible actions are to be encoded in JavaScript (not implemented in this example) and make it<br> possible to
+                <b>filter, order, search</b> in a large data collection.</p>
+
+                <div id="datatable-container">
+                    <header>
+                        <p>List displayed:
+                            <select id="page-select">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option> 
+                            </select>
+                        </p>
+                        <form>
+                            <input  type="text" placeholder="Search.." />
+                        </form>
+                    </header>
+                    <table >
+
+                        <caption>Presentation of the various PHP Frameworks</caption>
+
+                        <thead>       
+                            <tr> 
+                                <th class="th">Framework</th>
+                                <th class="th">Year of creation</th>
+                                <th class="th">Creator</th>
+                                <th class="th">Github Stars</th>
+                            </tr>
+                            <tr> 
+                                <th><form><input type="search" placeholder="Framework name..."/></form></th>
+                                <th><select>
+                                    <option value="1">2020</option>
+                                </select></th>
+                                <th><input type="search" placeholder="Framework creator..."/></form></th>
+                                <th><select>
+                                    <option value="1">2020</option>
+                                </select></th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody> 
+                        
+                        <tr> 
+                            <td class="framework">Symfony</td>
+                            <td>2005</td>
+                            <td>SensioLabs</td>
+                            <td>23.1k</td>
+                        </tr>
+                        <tr> 
+                            <td class="framework">Lavarel</td>
+                            <td>2011</td>
+                            <td>Taylor Otwell</td>
+                            <td>58.8k</td>
+                        </tr>
+                        <tr> 
+                            <td class="framework">Codelgniter</td>
+                            <td>2006</td>
+                            <td>Rick Ellis</td>
+                            <td>18k</td>
+                        </tr>
+                        <tr> 
+                            <td class="framework">Zend Framework</td>
+                            <td>2006</td>
+                            <td>Zend Technologies</td>
+                            <td>5.7k</td>
+                        </tr>
+                        <tr> 
+                            <td class="framework">Yii</td>
+                            <td>2008</td>
+                            <td>Qiang Xu</td>
+                            <td>4.8k</td>
+                        </tr>
+                        <tr> 
+                            <td class="framework">CakePHP</td>
+                            <td>2005</td>
+                            <td>Cake Software Foundation</td>
+                            <td>8.1k</td>
+                        </tr>
+                        <tr> 
+                            <td class="framework">FuelPHP</td>
+                            <td>2011</td>
+                            <td>Fuel PHP dew team</td>
+                            <td>>1k</td>
+                        </tr>
+                        <tr> 
+                            <td class="framework">Phalcon</td>
+                            <td>2012</td>
+                            <td>Andres Gutierrez</td>
+                            <td>10.1k</td>
+                        </tr>
+                        <tr> 
+                            <td class="framework">Slim PHP</td>
+                            <td>-</td>
+                            <td>Slim Framework Team</td>
+                            <td>10.6k</td>
+                        </tr>
+                        <tr> 
+                            <td class="framework">PEAR</td>
+                            <td>1999</td>
+                            <td>Stig S. Bakken</td>
+                            <td>-</td>
+                        </tr>
+                        </tr>
+
+                        
+                        </tbody>   
+
+                        <tfoot>
+                            <th colspan="3" class="framework">Total Stars</th>
+                            <td>>100k</td>
+                        </tfoot>
+                    </table>
+                    <footer>
+                        <p>Total: <b>150 rows</b></p>
+                        <div class="pagination">
+                            <a href="#" class="inactive">Back</a>
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">Forward</a>
+                          </div>
+                    </footer>
+                </div>
+                
+            
+            </article>
+        </section>
+    </div>
+
+</body>
+</html>
